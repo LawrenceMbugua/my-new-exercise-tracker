@@ -11,7 +11,7 @@ const EditExercises = (props) => {
     const { id } = useParams()
 
     useEffect(() => {
-        console.log(id);
+        //console.log(id);
         //fetch data of a specific user                //CHANGE HERE...
         axios.get('https://my-new-exercise-tracker.herokuapp.com/exercises/'+id)
             
@@ -28,7 +28,7 @@ const EditExercises = (props) => {
             .catch(err => console.log(err));
        
         
-         
+     // eslint-disable-next-line    
     }, []);
          
 

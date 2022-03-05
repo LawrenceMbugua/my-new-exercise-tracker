@@ -21,7 +21,7 @@ const CreateExercises = (props) => {
             })
              
             .catch(err => console.log(err))
-        
+      // eslint-disable-next-line
     }, []);
     
 
