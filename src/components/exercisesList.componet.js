@@ -39,7 +39,7 @@ const ExercisesList = (props) => {
 
     useEffect(() => {
         
-        axios.get('http://localhost:5000/exercises')
+        axios.get('https://my-new-exercise-tracker.herokuapp.com/exercises')
             
             .then(res => {
                 
@@ -53,7 +53,7 @@ const ExercisesList = (props) => {
 
     //Delete an exercise mtd
     const deleteExercise = (id) => {
-        axios.delete('http://localhost:5000/exercises/' + id)
+        axios.delete('https://my-new-exercise-tracker.herokuapp.com//exercises/' + id)
             
             .then(res => console.log('Deleted!'))
         

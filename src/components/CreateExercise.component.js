@@ -9,7 +9,7 @@ const CreateExercises = (props) => {
 
     useEffect(() => {
           
-        axios.get('http://localhost:5000/users')
+        axios.get('https://my-new-exercise-tracker.herokuapp.com/users')
             
             .then(res => {
                 setState(
@@ -56,7 +56,7 @@ const CreateExercises = (props) => {
             duration: state.duration
         };
 
-        axios.post('http://localhost:5000/exercises/add', exercise)
+        axios.post('https://my-new-exercise-tracker.herokuapp.com/exercises/add', exercise)
             .then(res => console.log(res.data))
             .catch(err => console.log(err))
         

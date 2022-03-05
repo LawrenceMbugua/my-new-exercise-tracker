@@ -13,7 +13,7 @@ const EditExercises = (props) => {
     useEffect(() => {
         console.log(id);
         //fetch data of a specific user                //CHANGE HERE...
-        axios.get('http://localhost:5000/exercises/'+id)
+        axios.get('https://my-new-exercise-tracker.herokuapp.com/exercises/'+id)
             
             .then(res => {
                 console.log(res.data);
@@ -26,19 +26,7 @@ const EditExercises = (props) => {
                 });
             })
             .catch(err => console.log(err));
-        
-        //Usernames
-        //  axios.get('http://localhost:5000/users')
-            
-        //      .then(res => {
-              
-        //         setState({
-        //             ...state, users: res.data.map(user => user.username),
-        //             username: res.data[0].username
-        //         });
-              
-        //     })
-        //     .catch(err => console.log(err))
+       
         
          
     }, []);
@@ -72,7 +60,7 @@ const EditExercises = (props) => {
             duration: state.duration
         };
 
-        axios.post('http://localhost:5000/exercises/update/'+id, exercise)
+        axios.post('https://my-new-exercise-tracker.herokuapp.com//exercises/update/'+id, exercise)
 
             .then(res => console.log(res.data))
             .catch(err => console.log(err))
