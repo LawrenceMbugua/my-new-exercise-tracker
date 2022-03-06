@@ -60,7 +60,7 @@ const EditExercises = (props) => {
             duration: state.duration
         };
 
-        axios.post('https://my-new-exercise-tracker.herokuapp.com//exercises/update/'+id, exercise)
+        axios.post('https://my-new-exercise-tracker.herokuapp.com/exercises/update/'+id, exercise)
 
             .then(res => console.log(res.data))
             .catch(err => console.log(err))

@@ -55,7 +55,7 @@ const ExercisesList = (props) => {
     //Delete an exercise mtd
     const deleteExercise = (id) => {
         
-        axios.delete('https://my-new-exercise-tracker.herokuapp.com//exercises/' + id)
+        axios.delete('https://my-new-exercise-tracker.herokuapp.com/exercises/' + id)
             
             .then(res => console.log('Deleted!'))
         
